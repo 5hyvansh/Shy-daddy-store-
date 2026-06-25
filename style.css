@@ -92,3 +92,68 @@ footer {
 .social:hover {
   transform: scale(1.05);
 }
+/* Logo Animation */
+.logo {
+  animation: logoDown 1s ease;
+}
+
+@keyframes logoDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card Animation */
+.card {
+  animation: fadeUp 1s ease;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(255,255,255,0.15);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button Animation */
+.button,
+.social {
+  transition: transform 0.3s ease;
+}
+
+.button:hover,
+.social:hover {
+  transform: scale(1.08);
+}
+
+/* Popup Animation */
+.popup-box {
+  animation: popupZoom 0.3s ease;
+}
+
+@keyframes popupZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
